@@ -10,13 +10,7 @@ The commands and instructions will look like the following:
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.net.URL;
-
-…
-try {             // get URL content
-  URL url = new URL("http://127.0.0.1:9200");             
-  URLConnection conn = url.openConnection();// open the stream and put it into BufferedReader             
-  BufferedReader br = new BufferedReader(new InputStreamReader(conn.getInputStream()));              
+import java.net.URL;        
 
 String inputLine;             
 while ((inputLine = br.readLine()) != null){
@@ -28,20 +22,6 @@ System.out.println("Done");
 e.printStackTrace();         
 } catch (IOException e) {             
 e.printStackTrace();         
-}
-In Scala, the request will be:
-scala.io.Source.fromURL("http://127.0.0.1:9200",
-"utf-8").getLines.mkString("\n")
-For every language sample, the response will be the same:
-{
-  "ok" : true,
-  "status" : 200,
-  "name" : "Payge, Reeva",
-  "version" : {
-    "number" : "1.4.0",
-    "snapshot_build" : false
-  },
-  "tagline" : "You Know, for Search"
 }
 
 
