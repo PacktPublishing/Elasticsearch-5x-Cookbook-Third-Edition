@@ -53,4 +53,4 @@ Chapter 01, 02, 10, 11 do not have code files.
 ## Related products:
 * [ElasticSearch Cookbook](https://www.packtpub.com/big-data-and-business-intelligence/elasticsearch-cookbook?utm_source=github&utm_medium=repository&utm_campaign=9781782166627)
 * [Mastering ElasticSearch 5.0 - Third Edition](https://www.packtpub.com/big-data-and-business-intelligence/mastering-elasticsearch-50-third-edition?utm_source=github&utm_medium=repository&utm_campaign=9781786460189)
-* [Raspberry Pi Home Automation with Arduino](https://www.packtpub.com/hardware-and-creative/raspberry-pi-home-automation-arduino?utm_source=github&utm_medium=repository&utm_content=9781849695862
+* [ElasticSearch Cookbook - Second Edition](https://www.packtpub.com/networking-and-servers/elasticsearch-cookbook-second-edition?utm_source=github&utm_medium=repository&utm_campaign=9781783554836)
