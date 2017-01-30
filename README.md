@@ -1,9 +1,7 @@
 # Elasticsearch-5x-Cookbook-Third-Edition
 Code repository for Elasticsearch 5.x Cookbook, published by Packt
-<<< # Elasticsearch-5.x-Cookbook
 
-This is the code repository for[Elasticsearch 5.x Cookbook](https://www.packtpub.com/big-data-and-business-intelligence/elasticsearch-50-cookbook-third-edition?utm_source=github&utm_medium=repository&utm_campaign=9781786465580),published by Packt.It contains all the supporting
-project files necessary to work through the book from start to finish.
+This is the code repository for [Elasticsearch 5.x Cookbook](https://www.packtpub.com/big-data-and-business-intelligence/elasticsearch-50-cookbook-third-edition?utm_source=github&utm_medium=repository&utm_campaign=9781786465580), published by Packt. It contains all the supporting project files necessary to work through the book from start to finish.
 
 ## Instructions and Navigation
 All of the code is organized into folders.Each folder starts with a number followed by the application name.
