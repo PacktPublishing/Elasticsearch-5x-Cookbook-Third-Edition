@@ -1,0 +1,62 @@
+{
+  "mappings": {
+    "test-type": {
+      "properties": {
+        "versions": {
+          "type": "nested",
+          "properties": {
+            "color": {
+              "store": "yes",
+              "type": "keyword"
+            },
+            "size": {
+              "store": "yes",
+              "type": "integer"
+            }
+          }
+        },
+        "pos": {
+          "type": "integer",
+          "store": "yes"
+        },
+        "uuid": {
+          "store": "yes",
+          "type": "keyword"
+        },
+        "parsedtext": {
+          "term_vector": "with_positions_offsets",
+          "store": "yes",
+          "type": "text"
+        },
+        "name": {
+          "term_vector": "with_positions_offsets",
+          "store": "yes",
+          "fielddata": true,
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword"
+            }
+          }
+        },
+        "title": {
+          "term_vector": "with_positions_offsets",
+          "store": "yes",
+          "type": "text",
+          "fielddata": true,
+          "fields": {
+            "raw": {
+              "type": "keyword"
+            }
+          }
+        }
+      }
+    },
+    "test-type2": {
+      "_parent": {
+        "type": "test-type"
+      }
+    }
+  }
+}
+
