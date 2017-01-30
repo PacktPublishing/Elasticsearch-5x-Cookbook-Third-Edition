@@ -7,16 +7,29 @@ This is the code repository for [Elasticsearch 5.x Cookbook](https://www.packtpu
 All of the code is organized into folders.Each folder starts with a number followed by the application name.
 The commands and instructions will look like the following:
 
-{
-  "ok" : true,
-  "status" : 200,
-  "name" : "Payge, Reeva",
-  "version" : {
-    "number" : "1.4.0",
-    "snapshot_build" : false
-  },
-  "tagline" : "You Know, for Search"
+import java.io.BufferedReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.URL;
+
+…
+try {
+// get URL content         
+  URLConnection conn = url.openConnection();// open the stream and put it into BufferedReader             
+  BufferedReader br = new BufferedReader(new InputStreamReader(conn.getInputStream()));              
+
+String inputLine;             
+while ((inputLine = br.readLine()) != null){
+System.out.println(inputLine);             
+}             
+br.close();              
+System.out.println("Done");          
+} catch (MalformedURLException e) {
+e.printStackTrace();         
+} catch (IOException e) {             
+e.printStackTrace();         
 }
+
 
 
 
