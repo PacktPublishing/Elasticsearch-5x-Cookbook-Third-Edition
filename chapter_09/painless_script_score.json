@@ -1,0 +1,12 @@
+{
+  "query": {
+    "function_score": {
+      "script_score": {
+        "script": {
+          "lang": "painless",
+          "inline": "doc['price'].value * 1.2"
+        }
+      }
+    }
+  }
+}
