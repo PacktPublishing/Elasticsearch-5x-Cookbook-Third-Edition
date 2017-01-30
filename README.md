@@ -7,11 +7,18 @@ This is the code repository for [Elasticsearch 5.x Cookbook](https://www.packtpu
 All of the code is organized into folders.Each folder starts with a number followed by the application name.
 The commands and instructions will look like the following:
 
-<dependency>
-    <groupId>org.elasticsearch</groupId>
-    <artifactId>elasticsearch</artifactId>
-    <version>5.0</version>
-</dependency>
+import org.elasticsearch.common.settings.Settings;
+import org.elasticsearch.client.Client;
+import org.elasticsearch.client.transport.TransportClient;
+     …
+Settings settings = Settings.settingsBuilder()
+.put("client.transport.sniff", true).build();
+    // we define a new settings
+    // using sniff transport allows to autodetect other nodes
+Client client = TransportClient.builder().settings(settings).build()
+                .addTransportAddress(new InetSocketTransportAddress("127.0.0.1", 9300));
+    // a client is created with the settings
+
 
 
 ## Note:
