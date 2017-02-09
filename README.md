@@ -13,7 +13,7 @@ You will understand how to install Kibana to monitor a cluster and also to exten
 By the end of this book, you will have an in-depth knowledge of the implementation of the Elasticsearch architecture and will be able to manage data efficiently and effectively with Elasticsearch.
 
 ## Instructions and Navigation
-All of the code is organized into folders.Each folder starts with a number followed by the application name.
+All of the code is organized into folders.
 The commands and instructions will look like the following:
 
 import java.io.BufferedReader;
