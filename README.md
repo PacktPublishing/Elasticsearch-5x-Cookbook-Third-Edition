@@ -1,4 +1,4 @@
-# Elasticsearch-5x-Cookbook-Third-Edition
+# Elasticsearch 5x Cookbook Third Edition
 Code repository for Elasticsearch 5.x Cookbook, published by Packt
 
 This is the code repository for [Elasticsearch 5.x Cookbook](https://www.packtpub.com/big-data-and-business-intelligence/elasticsearch-50-cookbook-third-edition?utm_source=github&utm_medium=repository&utm_campaign=9781786465580), published by Packt. It contains all the supporting project files necessary to work through the book from start to finish.
@@ -16,28 +16,28 @@ By the end of this book, you will have an in-depth knowledge of the implementati
 All of the code is organized into folders.
 The commands and instructions will look like the following:
 
-import java.io.BufferedReader;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.net.URL;
+    import java.io.BufferedReader;
+    import java.io.InputStream;
+    import java.io.InputStreamReader;
+    import java.net.URL;
 
-…
-try {
-// get URL content         
-  URLConnection conn = url.openConnection();// open the stream and put it into BufferedReader             
-  BufferedReader br = new BufferedReader(new InputStreamReader(conn.getInputStream()));              
+    …
+    try {
+    // get URL content         
+      URLConnection conn = url.openConnection();// open the stream and put it into BufferedReader             
+      BufferedReader br = new BufferedReader(new InputStreamReader(conn.getInputStream()));              
 
-String inputLine;             
-while ((inputLine = br.readLine()) != null){
-System.out.println(inputLine);             
-}             
-br.close();              
-System.out.println("Done");          
-} catch (MalformedURLException e) {
-e.printStackTrace();         
-} catch (IOException e) {             
-e.printStackTrace();         
-}
+    String inputLine;             
+    while ((inputLine = br.readLine()) != null){
+    System.out.println(inputLine);             
+    }             
+    br.close();              
+    System.out.println("Done");          
+    } catch (MalformedURLException e) {
+    e.printStackTrace();         
+    } catch (IOException e) {             
+    e.printStackTrace();         
+    }
 
 
 
